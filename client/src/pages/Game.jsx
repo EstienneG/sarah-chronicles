@@ -468,7 +468,7 @@ export function Game() {
                   stopNarration={stopNarration}
                   playNarration={playNarration}
                   onDecisionMade={handleChoice}
-                  currentContext={`Sarah this is the situation you're in : ${
+                  currentContext={`You are Sarah and this is the situation you're in : ${
                     storySegments[storySegments.length - 1].text
                   }. Those are your possible decisions : \n ${currentChoices
                     .map((choice, index) => `decision ${index + 1} : ${choice.text}`)
