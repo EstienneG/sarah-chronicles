@@ -1,9 +1,11 @@
 import { useState, useRef } from "react";
 import { storyApi } from "../utils/api";
+import { useGameSession } from "../hooks/useGameSession";
 
 export function useNarrator(isEnabled = true) {
   const [isNarratorSpeaking, setIsNarratorSpeaking] = useState(false);
   const audioRef = useRef(new Audio());
+  const { sessionId } = useGameSession();
 
   const stopNarration = () => {
     if (audioRef.current) {
@@ -21,7 +23,7 @@ export function useNarrator(isEnabled = true) {
       stopNarration();
 
       // Get audio from API
-      const response = await storyApi.narrate(text);
+      const response = await storyApi.narrate(text, sessionId);
 
       if (!response || !response.audio_base64) {
         throw new Error("Pas d'audio reçu du serveur");
