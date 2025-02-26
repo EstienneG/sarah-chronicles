@@ -7,7 +7,8 @@ An interactive narrative game that generates unique stories in comic book form, 
 - Unique story generation with Mistral AI
 - Interactive comic book interface
 - Predefined or custom choices
-- Voice narration & character interaction
+- Talk with the character of the story and convince him to take an action or the other
+- Voice narration
 - Responsive design (desktop & mobile)
 
 ## 🚀 Quick Start
