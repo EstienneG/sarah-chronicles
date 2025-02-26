@@ -1,11 +1,3 @@
----
-title: IA Interactive Comic Book
-emoji: 💭
-colorFrom: red
-colorTo: blue
-sdk: docker
-pinned: true
----
 # Comic Book Generator - Interactive AI Stories
 
 An interactive narrative game that generates unique stories in comic book form, powered by AI.
